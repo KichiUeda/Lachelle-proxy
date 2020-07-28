@@ -41,10 +41,9 @@ class App extends React.Component {
       <div id="desc"></div>
       <div id="Traits"></div>
       <div id="related"></div>
-      {/* <div id="OtherPopularGames"></div> */}
+      <div id="OtherPopularGames"></div>
       <div id="SystemRequirements"></div>
       <div id="legal"></div>
-
       <Footer />
     </div>
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.div`
-  background-color: rgb(73, 79, 92);
+  background-color: #494f5c;
   justify-content: center;
 `;
 const HeaderContent = styled.div`
@@ -43,16 +43,25 @@ const Logo = styled.div`
   }
 `
 const SearchBar = styled.div`
+margin-right: 50px;
 margin-left: 100px;
   input {
-    font-style: inherit;
-    background-color: grey;
-    padding: 5px;
-    border-radius: 4px;
+    background-color: #7d828a;
+    border-radius: 3px;
     border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-size: 0.80em;
+    font-weight: bold;
+    padding: 0.75em 2em 0.75em 0.9em;
+    width: 100%;
   }
+  ::placeholder {
+    font-color: #494f5c;
+}
 `
-const RegisterLogin = styled.a`
+const RegisterAndLoginBoxes = styled.div`
+  font-size: 16px;
   border: 2px solid #757880;
   &:hover {
     color: white;
@@ -63,7 +72,7 @@ const PurchaseSpan = styled.div`
   font-size: 15px;
   color: #c9d0de;
   display: flex;
-  align-items: flex-end;
+  align-items: right;
 `
 
 export default class HeaderContentigation extends React.Component {
@@ -77,12 +86,10 @@ export default class HeaderContentigation extends React.Component {
           <HeaderFirstRowNav>STORE</HeaderFirstRowNav>
           <HeaderFirstRowNav>ABOUT</HeaderFirstRowNav>
           <SearchBar>
-            <input placeholder="Search"></input>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-            <button type="submit"><i className="fa fa-search"></i></button>
+            <input type="text" placeholder="Search"></input>
           </SearchBar>
-          <RegisterLogin><HeaderFirstRowNav>LOG IN</HeaderFirstRowNav></RegisterLogin>
-          <RegisterLogin><HeaderFirstRowNav>SIGN UP</HeaderFirstRowNav></RegisterLogin>
+          <RegisterAndLoginBoxes><HeaderFirstRowNav><i class="fa fa-user-circle-o fa-2" aria-hidden="true"></i>  LOG IN</HeaderFirstRowNav></RegisterAndLoginBoxes>
+          <RegisterAndLoginBoxes><HeaderFirstRowNav>SIGN UP</HeaderFirstRowNav></RegisterAndLoginBoxes>
         </HeaderContent>
         <HeaderContent>
           <HeaderSecondRowNav>ON SALE</HeaderSecondRowNav>
@@ -93,15 +100,15 @@ export default class HeaderContentigation extends React.Component {
           <PurchaseSpan>
             <HeaderSecondRowNav>
               <i className="fa fa-credit-card"></i>
-              $0.00
+                $0.00
             </HeaderSecondRowNav>
             <HeaderSecondRowNav>
               <span className="fa fa-star"></span>
-              0
+               0
             </HeaderSecondRowNav>
             <HeaderSecondRowNav>
               <i className="fa fa-shopping-cart"></i>
-              0
+               0
             </HeaderSecondRowNav>
           </PurchaseSpan>
         </HeaderContent>
