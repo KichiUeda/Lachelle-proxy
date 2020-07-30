@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/KichiUeda/Lachelle-proxy#readme",
   "dependencies": {
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
     "babel-loader": "^8.1.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

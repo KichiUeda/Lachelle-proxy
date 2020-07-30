@@ -34,14 +34,14 @@ class App extends React.Component {
       </GameTitle>
       <TopRow>
         <div id='images'></div>
-        <div id='PriceAndPromotion'></div>
+        <div className='pricePromo-app-proxy' id='PriceAndPromotion'></div>
       </TopRow>
       <div id='carousel'></div>
       <div id="Overview"></div>
       <div id="desc"></div>
       <div id="Traits"></div>
       <div id="related"></div>
-      <div id="OtherPopularGames"></div>
+      <div className='otherPopularGames-app-proxy' id="OtherPopularGames"></div>
       <div id="SystemRequirements"></div>
       <div id="legal"></div>
       <Footer />
