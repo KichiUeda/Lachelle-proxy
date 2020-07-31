@@ -1,23 +1,5 @@
-/* .flex-container {
-  display: flex;
-  flex-direction: row;
+
+.proxy-pricePromo-app {
   justify-content: center;
-  height: 430px;
-  width: 424.99px;
-}
 
-.flex-child-images {
-  width: 424.99px;
-
-}
-
-.flex-child-priceAndPromo {
-  width: 217.5px;
-
-} */
-
-.game-title {
-  display: flex;
-  flex-direction: row;
-  background-color: #282c34;
 }
