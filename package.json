@@ -6,7 +6,8 @@
   "scripts": {
     "start:dev": "nodemon ./server/index.js",
     "start:prod": "node ./server/index.js",
-    "build": "webpack --watch -d"
+    "build:dev": "webpack --watch -d",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,6 @@
   "homepage": "https://github.com/KichiUeda/Lachelle-proxy#readme",
   "dependencies": {
     "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
-    "babel-loader": "^8.1.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
@@ -35,6 +35,8 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
     "html-webpack-plugin": "^4.3.0",
     "nodemon": "^2.0.4",
     "webpack": "^4.44.0",

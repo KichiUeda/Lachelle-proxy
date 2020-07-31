@@ -61,10 +61,19 @@ margin-left: 100px;
 }
 `
 const RegisterAndLoginBoxes = styled.div`
-  font-size: 16px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 46.5px;
   border: 2px solid #757880;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   &:hover {
     color: white;
+    border-color: white;
   }
 `
 const PurchaseSpan = styled.div`
@@ -72,7 +81,7 @@ const PurchaseSpan = styled.div`
   font-size: 15px;
   color: #c9d0de;
   display: flex;
-  align-items: right;
+  align-items: center;
 `
 
 export default class HeaderContentigation extends React.Component {
