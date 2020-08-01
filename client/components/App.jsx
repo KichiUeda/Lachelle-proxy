@@ -7,7 +7,6 @@ const ProxyAppWrapper = styled.div`
 width: 100%;
 margin: 0;
 padding: 0;
-height: 100px;
 `;
 
 const TitleWrapper = styled.div`
