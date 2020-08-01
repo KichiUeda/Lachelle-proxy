@@ -3,6 +3,13 @@ import styled from 'styled-components';
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 
+const ProxyAppWrapper = styled.div`
+width: 100%;
+margin: 0;
+padding: 0;
+height: 100px;
+`;
+
 const TitleWrapper = styled.div`
 display: flex;
 flex-direction: row;
@@ -46,14 +53,15 @@ class App extends React.Component {
 
   render() {
     return <div>
+      <ProxyAppWrapper className='proxy-app-wrapper' />
       <Header />
       <TitleWrapper className='proxy-header-title-wrapper'>
-      <GameTitle>
-        <div id='Title'></div>
-      </GameTitle>
+        <GameTitle>
+          <div id='Title'></div>
+        </GameTitle>
       </TitleWrapper>
       <TopRow className='proxy-header-top-row-viewer-pep'>
-        <div className ='proxy-images-video-viewer' id='images'></div>
+        <div className='proxy-images-video-viewer' id='images'></div>
         <div className='proxy-pricePromo-app' id='PriceAndPromotion'></div>
       </TopRow>
       <div id='carousel'></div>
@@ -65,6 +73,7 @@ class App extends React.Component {
       <div id="SystemRequirements"></div>
       <div id="legal"></div>
       <Footer />
+      <ProxyAppWrapper />
     </div>
   }
 }
