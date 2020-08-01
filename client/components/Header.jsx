@@ -26,11 +26,17 @@ const HeaderFirstRowNav = styled.div`
 `;
 
 const HeaderSecondRowNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 25px;
+  space-between: 3px;
   font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #c9d0de;
-  margin-bottom: 8px;
-  padding-left: 50px;
+  margin-bottom: 2px;
+  padding-left: 60px;
   &:hover {
     color: white;
   }
@@ -43,6 +49,7 @@ const Logo = styled.div`
   }
 `
 const SearchBar = styled.div`
+width: 400px;
 margin-right: 50px;
 margin-left: 100px;
   input {
@@ -56,8 +63,11 @@ margin-left: 100px;
     padding: 0.75em 2em 0.75em 0.9em;
     width: 100%;
   }
-  ::placeholder {
-    font-color: #494f5c;
+}
+`
+const Input = styled.input`
+::placeholder {
+  color: #282c34;
 }
 `
 const RegisterAndLoginBoxes = styled.div`
@@ -67,6 +77,7 @@ const RegisterAndLoginBoxes = styled.div`
   border: 2px solid #757880;
   display: flex;
   font-size: 12px;
+  font-weight: 600;
   align-items: center;
   justify-content: center;
   border-top-right-radius: 3px;
@@ -77,12 +88,14 @@ const RegisterAndLoginBoxes = styled.div`
   }
 `
 const PurchaseSpan = styled.div`
+ margin-left: 10%;
   font-family: roboto;
   font-size: 15px;
   color: #c9d0de;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
 `
+
 
 export default class HeaderContentigation extends React.Component {
   render() {
@@ -95,13 +108,13 @@ export default class HeaderContentigation extends React.Component {
           <HeaderFirstRowNav>STORE</HeaderFirstRowNav>
           <HeaderFirstRowNav>ABOUT</HeaderFirstRowNav>
           <SearchBar>
-            <input type="text" placeholder="Search"></input>
+            <Input className='search-box' type="text" placeholder="Search"></Input>
           </SearchBar>
           <RegisterAndLoginBoxes><HeaderFirstRowNav><i class="fa fa-user-circle-o fa-2" aria-hidden="true"></i>  LOG IN</HeaderFirstRowNav></RegisterAndLoginBoxes>
           <RegisterAndLoginBoxes><HeaderFirstRowNav>SIGN UP</HeaderFirstRowNav></RegisterAndLoginBoxes>
         </HeaderContent>
         <HeaderContent>
-          <HeaderSecondRowNav>ON SALE</HeaderSecondRowNav>
+          <HeaderSecondRowNav className='header-2nd-row'>ON SALE</HeaderSecondRowNav>
           <HeaderSecondRowNav>NEW RELEASES</HeaderSecondRowNav>
           <HeaderSecondRowNav>BESTSELLING</HeaderSecondRowNav>
           <HeaderSecondRowNav>BROWSE</HeaderSecondRowNav>
