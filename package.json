@@ -4,10 +4,10 @@
   "description": "FEC-UEDA-Proxy",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon ./server/index.js",
+    "start": "nodemon ./server/index.js",
     "start:prod": "node ./server/index.js",
-    "build:dev": "webpack --watch -d",
-    "build": "webpack -p"
+    "build": "webpack --watch -d",
+    "build:prod": "webpack -p"
   },
   "repository": {
     "type": "git",

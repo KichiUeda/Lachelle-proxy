@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
-import Header from "./Header.jsx";
-import Footer from "./Footer.jsx";
+// import Header from "./Header.jsx";
+// import Footer from "./Footer.jsx";
 
 const ProxyAppWrapper = styled.div`
 width: 100%;
@@ -50,10 +50,10 @@ class App extends React.Component {
     }
   }
 
-  render() {
+  render() {   
     return <div>
       <ProxyAppWrapper className='proxy-app-wrapper' />
-      <Header />
+      {/* <Header /> */}
       <TitleWrapper className='proxy-header-title-wrapper'>
         <GameTitle>
           <div id='Title'></div>
@@ -63,15 +63,16 @@ class App extends React.Component {
         <div className='proxy-images-video-viewer' id='images'></div>
         <div className='proxy-pricePromo-app' id='PriceAndPromotion'></div>
       </TopRow>
-      <div id='carousel'></div>
+      <div id="images"></div>
+      <div id="carousel"></div>
       <div id="Overview"></div>
       <div id="desc"></div>
-      <div id="Traits"></div>
       <div id="related"></div>
+      <div id="Traits"></div>
       <div className='otherPopularGames-app-proxy' id="OtherPopularGames"></div>
       <div id="SystemRequirements"></div>
       <div id="legal"></div>
-      <Footer />
+      {/* <Footer /> */}
       <ProxyAppWrapper />
     </div>
   }
